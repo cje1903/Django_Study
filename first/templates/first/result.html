@@ -1,0 +1,15 @@
+{% extends 'first/base.html' %}
+{% load static %}
+{% block content %}
+
+    <h3>추천 번호는 다음과 같습니다.</h3>
+    <div style="text-align:left;">
+        <ul>
+            {% for num in numbers %}
+            <li>
+                {{ num }}   #특정 변수를 출력만 할때는 %없어도 됨
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
