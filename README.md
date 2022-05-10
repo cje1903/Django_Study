@@ -80,24 +80,9 @@ Django는 하나의 프로젝트 내의 여러 개의 앱을 가집니다.<br/>
 ```
 
 ## __URL Patterns__ 📖<br/>
-> `first` __web app__ <br/>
-> > `http://127.0.0.1:8000/first/`<br/>
-> > `http://127.0.0.1:8000/first/select/`<br/>
-> > `http://127.0.0.1:8000/first/result/`<br/>
-
-> `second` __web app__ <br/>
-> > `http://127.0.0.1:8000/second/list/`<br/>
-> > `http://127.0.0.1:8000/second/create/`<br/>
-> > `http://127.0.0.1:8000/second/confirm/`<br/>
-
-> `third` __web app__ <br/>
-> > `http://127.0.0.1:8000/third/list/`<br/>
-> > `http://127.0.0.1:8000/third/create/`<br/>
-> > `http://127.0.0.1:8000/third/update/`<br/>
-> > `http://127.0.0.1:8000/third/restaurant/<int:id>/`<br/>
-> > `http://127.0.0.1:8000/third/restaurant/<int:id>/delete/`<br/>
-> > `http://127.0.0.1:8000/third/restaurant/<int:restaurant_id>/review/create/`<br/>
-> > `http://127.0.0.1:8000/third/restaurant/<int:restaurant_id>/review/delete/<int:review_id>/`<br/>
-> > `http://127.0.0.1:8000/third/review/list/`<br/>
-
-> `admin` __admin__ <br/>
+### [__first__]() 📖<br/>
+➡️ `http://127.0.0.1:8000/first/`<br/>
+### [__second__]() 📖<br/>
+➡️ `http://127.0.0.1:8000/second/`<br/>
+### [__third__]() 📖<br/>
+➡️ `http://127.0.0.1:8000/third/`<br/>
