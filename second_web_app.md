@@ -86,6 +86,7 @@ def list(request):
 ```
 > a 태그를 누르면 `'create'라는 name의 url`로 이동하겠다 => `http://127.0.0.1:8000/second/create/`
 
+<br/>
 
 ### 📃 `http://127.0.0.1:8000/second/create/`<br/>
 1️⃣ `GET으로 'create'에 접근` <br/><br/>
