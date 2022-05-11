@@ -1,19 +1,18 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>Second</title>
-</head>
-<body>
+{% extends 'second/base.html' %}
+{% block content %}
+
+<div class="container" style="background-color:gray; color:black; padding:20px">
+
+    <a href="{% url 'create' %}" style="background-color:lightgray">입력하러 가기</a>
+
     {% for item in items %}
-    <div>
-        <h4>
-            {{ item.title }}
-        </h4>
-        <p>
-            {{ item.content }}
-        </p>
+    <div class="card border-secondary">
+    <div class="card-body" style="background-color:lightgray">
+        <h5 class="card-title">TITLE: {{ item.title }}</h5>
+        <p class="card-text">CONTENT: {{ item.content }}</p>
     </div>
-    {% endfor %}
-</body>
-</html>
+    </div>
+{% endfor %}
+</div>
+
+{% endblock %}

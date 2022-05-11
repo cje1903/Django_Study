@@ -2,13 +2,13 @@
 {% load static %}
 {% block content %}
 
-    <p>Hello World!</p>
+    <p>행운의 [wow-naru] 입니다</p>
 
-    <img style="width:100px;" src="{% static 'first/image.png'%}" alt="오소프 사진"/>
+    <img style="width:100px;" src="{% static 'first/와-나루.jpg'%}" alt="나루 사진"/>
 
     <p>{{current_date}}</p>
     <p>{{current_date|date:"Y년 m월 d일 H시 i분 s초"}}</p>
 
-    <a href="{% url 'select' %}">시작하기!</a> //urls의 name과 연결
+    <a href="{% url 'select' %}">로또 번호 추천받으러 가기</a>
 
 {% endblock %}

@@ -1,8 +1,14 @@
+{% extends 'second/base.html' %}
+{% block content %}
+
 <body>
   <h4>
-    {{ form.title.value }}
+    TITLE: {{ form.title.value }}
   </h4>
   <p>
-    {{ form.content.value }}
+    CONTENT: {{ form.content.value }}
   </p>
+  <a href="{% url 'list' %}" style="background-color:lightgray">리스트로 돌아가기</a>
 </body>
+
+{% endblock %}

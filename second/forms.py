@@ -17,8 +17,8 @@ class PostForm(ModelForm):
             'content': _('내용')
         }
         help_texts = {
-            'title': _('제목을 입력해주세용'),
-            'content': _('내용을 입력해주세용')
+            'title': _('제목을 입력해주세용(*￣3￣)╭'),
+            'content': _('내용을 입력해주세용(*￣3￣)╭')
         }
         error_message = {
             'name': {

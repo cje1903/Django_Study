@@ -20,15 +20,9 @@ def create(request):
         if form.is_valid():
             print(form)  # 레코드를 생성하는 코드 필요
             new_item = form.save()  # 이 구문 하나면, 모델 스키마에 저장
-        return HttpResponseRedirect('/second/list/')
+        return render(request, 'second/confirm.html', {'form': form})
 
     # GET 으로 접속
     form = PostForm()
     return render(request, 'second/create.html', {'form': form})
 
-
-def confirm(request):
-    form = PostForm(request.POST)
-    if form.is_valid():
-        return render(request, 'second/confirm.html', {'form': form})
-    return HttpResponseRedirect('/second/create/')

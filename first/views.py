@@ -6,6 +6,7 @@ from datetime import datetime
 
 import random
 
+
 # Create your views here.
 def index(request):
     now = datetime.now()
@@ -17,7 +18,7 @@ def index(request):
 
 
 def select(request):
-    context={}
+    context = {}
     return render(request, 'first/select.html', context)
 
 
@@ -25,11 +26,11 @@ def result(request):
     chosen = int(request.GET['number'])
 
     results = []
-    if chosen >=1 and chosen <=45:
+    if chosen >= 1 and chosen <= 45:
         results.append(chosen)
 
     box = []
-    for i in range(0,45):
+    for i in range(0, 45):
         if chosen != i+1:
             box.append(i+1)
 
