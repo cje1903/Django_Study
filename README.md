@@ -13,40 +13,10 @@ Django는 하나의 프로젝트 내의 여러 개의 앱을 가집니다.<br/>
 │  └─wsgi.py
 │
 ├─📁first
-│  ├─🗀migrations
-│  ├─🗀static
-│  │  └─🖿first
-│  │    ├─image.png
-│  │    └─style.css
-│  ├─🗀templates
-│  │  └─🖿first
-│  │    ├─base.html
-│  │    ├─index.html
-│  │    ├─result.html
-│  │    └─select.html
-│  ├─__init__.py
-│  ├─admin.py
-│  ├─apps.py
-│  ├─models.py
-│  ├─tests.py
-│  ├─urls.py
-│  └─views.py
+│
 │
 ├─📁second
-│  ├─🗀migrations
-│  ├─🗀templates
-│  │  └─🖿second
-│  │    ├─confirm.html
-│  │    ├─create.html
-│  │    └─list.html
-│  ├─__init__.py
-│  ├─admin.py
-│  ├─apps.py
-│  ├─forms.py
-│  ├─models.py
-│  ├─tests.py
-│  ├─urls.py
-│  └─views.py
+│
 │
 ├─📁third
 │  ├─🗀migrations
