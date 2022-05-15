@@ -17,28 +17,6 @@ Django는 하나의 프로젝트 내의 여러 개의 앱을 가집니다.<br/>
 ├─📁second
 │
 ├─📁third
-│  ├─🗀migrations
-│  ├─🗀static
-│  │  └─🖿third
-│  │    └─style.css
-│  ├─🗀templates
-│  │  └─🖿third
-│  │    ├─base.html
-│  │    ├─create.html
-│  │    ├─delete.html
-│  │    ├─detail.html
-│  │    ├─list.html
-│  │    ├─review_create.html
-│  │    ├─review_list.html
-│  │    └─update.html
-│  ├─__init__.py
-│  ├─admin.py
-│  ├─apps.py
-│  ├─forms.py
-│  ├─models.py
-│  ├─tests.py
-│  ├─urls.py
-│  └─views.py
 │
 ├─db.sqlite3
 ├─manage.py
