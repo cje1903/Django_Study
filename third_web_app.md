@@ -27,49 +27,10 @@ __third__ 📖
 │  └─views.py
 ```
 
-## __`models.py` & `forms.py`__ 📖 <br/>
+## __[ORM(Object Relational Mapping)](https://github.com/cje1903/Django_Study/blob/master/ORM.md)__ 📖 <br/>
 
-### 📃 `models.py`<br/>
-> `models.py`에 `Post` 라는 클래스(테이블) 생성 _(속성 - title, content, created_at, updated_at)_
-```
-class Post(models.Model):
-    title = models.CharField(max_length=30)
-    content = models.TextField()    # 문자열 길이 정의 x
 
-    created_at = models.DateTimeField(auto_now_add=True)    # 자동으로 현재 시간 기록
-    updated_at = models.DateTimeField(auto_now=True)    # 수정될 때마다 최근 수정시간 기록
-```
-> database는 default로 `sqlite3`를 사용 <br/>
-> `python manage.py makemigrations` => 변경 사항에 대한 마이그레이션 파일(0001_initial, 0002_alter_title_max_length 와 같이 변경 사항이 파일명에 표시 됨) 생성<br/>
-> `python manage.py migrate` => 변경 사항을 데이터 베이스에 적용<br/>
 
-<br/>
-
-### 📃 `forms.py`<br/>
-```
-class PostForm(ModelForm):
-    class Meta:
-        model = Post
-        fields = ['title', 'content']
-        labels = {
-            'title': _('제목'),
-            'content': _('내용')
-        }
-        help_texts = {
-            'title': _('제목을 입력해주세용(*￣3￣)╭'),
-            'content': _('내용을 입력해주세용(*￣3￣)╭')
-        }
-        error_message = {
-            'name': {
-                'max_length': _("제목이 너무 깁니다. 30자 이하로 해주세요")
-            }
-        }
-
-```
-> __`Form`이 아닌 `ModelForm`을 사용하는 이유__ <br/>
-> 모델 `Post`에 속성이 추가되면 `Form`도 그 때마다 수정해 주어야 하고<br/>
-> form으로 받았던 데이터들을 다시 꺼내서 수정된 Post 모델 클래스의 인스턴스에 넣어주어야 하기 때문에 번거로움<br/>
-> ❕ Django는 `Model form`으로 이 번거로움을 해결 ❕ <br/>
 
 
 ## __URL Patterns__ 📖 <br/>
