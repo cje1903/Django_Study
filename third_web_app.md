@@ -29,6 +29,7 @@ __third__ 📖
 
 ## __[ORM(Object Relational Mapping)](https://github.com/cje1903/Django_Study/blob/master/ORM.md)__ 📖 <br/>
 
+## __[CRUD(CREATE READ UPDATE DELETE)](https://github.com/cje1903/Django_Study/blob/master/CRUD.md)__ 📖 <br/>
 
 
 
